@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gamer Preference</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+  <h1 id="title">Gamer Preferences & Insights Survey</h1> 
+    <p id="description">This survey aims to gather insights on gaming habits,
+       preferences, and experiences within the gaming community.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter Your Name" required></label>
+      <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter Your Email" required></label>
+       <label id="number-label" for="number">Number 
+         <input id="number" type="number" pattern="^(013|015|017|019)\d{8}$" 
+         max="11" min="11" placeholder="Enter Your Number" ></label>
+         <label for="dropdown">Gender
+           <select id="dropdown" name="gender">
+             <option id="">Select Your Gender</option>
+             <option id="male">Male</option>
+             <option id="female">Female</option>
+             <option id="other">Other</option>
+           </select>
+         </label>
+         </fieldset>
+         <fieldset>
+           <legend>Are you part of any gaming Clans?</legend>
+           <label for="yes"><input id="yes" type="radio" name="community-member" value="yes" checked> Yes </label>
+           <label for="no"><input id="no" type="radio" name="community-member" value="no"> No </label>
+           </fieldset>
+           <fieldset>
+             <legend>What type of Games do you prefer?</legend>
+            <label for="fps"><input id="fps" type="checkbox" name="preference" value="fps" >First-Person Shooters (FPS)</label>
+           <label for="rpg"><input id="rpg" type="checkbox" name="preference" value="rpg">Role-Playing Games (RPG)</label>
+          <label for="strategy"><input id="strategy" type="checkbox" name="preference" value="strategy">Strategy Games</label>
+           <label for="sports"><input id="sports" type="checkbox" name="preference" value="sports">Sports Games</label>
+            <label for="adventure"><input id="adventure" type="checkbox" name="preference" value="adventure">Adventure Games</label>
+           <label for="puzzle"><input id="puzzle" type="checkbox" name="preference" value="puzzle">Puzzle Games</label>
+            <label for="simulation"><input id="simulation" type="checkbox" name="preference" value="v"> Simulation Games</label>
+           <label for="other"><input id="other" type="checkbox" name="preference" value="other">Others</label>
+           </fieldset>
+           <fieldset>
+             <legend>Tell Us About Your Favourite Game.</legend>
+             <textarea id="fvrt" name="fvrtgame" placeholder="Fifa is the game i most played...." rows="3" cols="40"></textarea>
+           </fieldset>
+           <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
